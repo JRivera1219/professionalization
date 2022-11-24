@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="print_pack_template">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+
+                    <t t-foreach="data" t-as="o">
+                        <center>
+                            <img style="float:left;" src='/professionalization/static/description/img1.png'/>
+                            <img style="float:right;" src='/professionalization/static/description/s1.png'/>
+                        </center>
+                        <h2 align="center" style="margin-top:200px; padding-top:50px;">CERTIFICADO DE PARTICIPACION</h2>
+                        <table align="center" style="page-break-after:always !important;">
+                            <tr>
+                                <td>
+                                    <br/>
+                                    <br/>
+                                    <p> ESTE CERTIFICADO VALIDA QUE  EL C.<span>
+                                        <strong>
+                                            <t t-esc="o['name']"/>
+                                        </strong>
+                                    </span>
+
+                                HA  ASISTIDO A UN CURSO DE CAPACITACION DE"<strong>
+                                    <t t-esc="o['program_name']"/>
+                                </strong> "
+                                        LLEVADA A CABO POR<strong>
+                                <t t-esc="o['program_convener']"/>
+                            </strong> DE<strong>
+                            <t t-esc="o['date_to']"/>
+                        </strong>CON UNA DURACION<strong>
+                        <t t-esc="o['duration']"/>
+                    </strong>Dias,
+                    <strong>
+                        <t t-esc="o['hours']"/>
+                    </strong>HORAS,<strong>
+                    <t t-esc="o['minutes']"/>
+                </strong>MINUTOS,
+                                        AL <strong>
+                <t t-esc="o['company_name']"/>
+
+
+            </strong>.
+        </p>
+
+        <!--parte baja-->
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+         <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+           <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+          <br></br>
+        <br></br>
+          <br></br>
+        <br></br>
+           <br></br>
+          <br></br>
+        <br></br>
+      
+        <center>
+            <img style="float:center; " src='/professionalization/static/description/Recurso 4.png'/>
+
+
+        </center>
+        <center>
+            <p>sria.part.ssp@nuevoleon.gob.mx | www.nl.gob/seguridad.mx
+                <br>Félix U. Gómez 2223 Norte, Col Reforma, 64450, Monterrey, Nuevo León. |</br>
+                <br>Tel.8120203600 @seguridadNL</br>
+            </p>
+        </center>
+        <!--fin de parte  baja-->
+    </td>
+</tr>
+
+</table>
+
+<!--center>
+    <img style="float:center; " src='/professionalization/static/description/Recurso 4.png'/>
+
+
+</center-->
+
+</t>
+
+</div>
+
+</t>
+</t>
+</template>
+</odoo>

@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="professionalization.list">
+      <field name="name">professionalization list</field>
+      <field name="model">professionalization.professionalization</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="professionalization.action_window">
+      <field name="name">professionalization window</field>
+      <field name="res_model">professionalization.professionalization</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="professionalization.action_server">
+      <field name="name">professionalization server</field>
+      <field name="model_id" ref="model_professionalization_professionalization"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="professionalization" id="professionalization.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="professionalization.menu_1" parent="professionalization.menu_root"/>
+    <menuitem name="Menu 2" id="professionalization.menu_2" parent="professionalization.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="professionalization.menu_1_list" parent="professionalization.menu_1"
+              action="professionalization.action_window"/>
+    <menuitem name="Server to list" id="professionalization" parent="professionalization.menu_2"
+              action="professionalization.action_server"/>
+-->
+  </data>
+</odoo>

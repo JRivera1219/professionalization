@@ -1,0 +1,17 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_professionalization_school,professionalization.school,model_professionalization_school,base.group_user,1,1,1,1
+access_professionalization_catalogs,hr.academic.formation.catalogs,model_hr_academic_formation_catalogs,base.group_user,1,1,1,1
+access_professionalization_class,hr.academic.formation.class,model_hr_academic_formation_class,base.group_user,1,1,1,1
+access_hr_academic_formation_category,hr.academic.formation.category,model_hr_academic_formation_category,base.group_user,1,1,1,1
+access_hr_academic_formation_background,hr.academic.formation.background,model_hr_academic_formation_background,base.group_user,1,1,1,1
+access_hr_academic_formation_funds,hr.academic.formation.funds,model_hr_academic_formation_funds,base.group_user,1,1,1,1
+access_hr_academic_formation_format,hr.academic.formation.format,model_hr_academic_formation_format,base.group_user,1,1,1,1
+access_hr_academic_formation,hr.academic.formation,model_hr_academic_formation,base.group_user,1,1,1,1
+access_hr_check_list_course,hr.check.list.course,model_hr_check_list_course,base.group_user,1,1,1,1
+access_employee_training_program,employee.training.program,model_employee_training_program,base.group_user,1,1,1,1
+access_cuip_cuip,cuip.cuip,model_cuip_cuip,base.group_user,1,1,1,1
+access_corp_corp,corp.corp,model_corp_corp,base.group_user,1,1,1,1
+
+access_orientation_request,orientation.request,model_orientation_request,base.group_user,1,1,1,1
+
+

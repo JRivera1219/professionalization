@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_cuip_cuip_form" model="ir.ui.view">
+            <field name="name">cuip.cuip.form</field>
+            <field name="model">cuip.cuip</field>
+            <field name="arch" type="xml">
+                <form string="CUIP">
+                    <sheet>
+                        <separator string="CUIP"/>
+                        <group col="4">
+                          
+                            <field name="num"/>
+                            <field name="Nombre_Completo"/>
+                            <field name="nombre1"/>
+                            <field name="Estatus"/>
+                            <field name="status"/>
+                            <field name="cuip"/>
+                            <field name="observacion"/>
+                          
+
+                        </group>
+                    </sheet>
+                    <!--notebook colspan="4">
+                        <page name="checklist_lines" string="Employee Details">
+                            <field name="Numero_empleado1">
+                                <tree editable="bottom">
+                                    <field name="name"/>
+                                    <field name="company_id"/>
+                                    <field name="fullname"/>
+                                    <field name="job_id"/>
+                                    <field name="parent_id"/>
+                                    <field name="certificates"/>
+                                </tree>
+                                                                    <field name="product_updatable" invisible="1"/>>
+                            </field>
+                        </page>
+                        
+                        
+                </notebook-->
+            <!--email-->
+            <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+            <!--email-->
+        </form>
+            </field>
+        </record>
+        <!-- Tree View Of School Information -->
+        <record id="view_cuip_cuip_tree" model="ir.ui.view">
+            <field name="name">cuip.cuip.tree</field>
+            <field name="model">cuip.cuip</field>
+            <field name="arch" type="xml">
+                <tree string="CUIP">
+             
+                            <field name="num"/>
+                            <field name="nombre1"/>
+                            <field name="Nombre_Completo"/>
+                            <!--field name="Estatus" style="background-color:red;"/-->
+                            <field name="Estatus"/>
+                            <field name="status"/>
+                            <field name="cuip"/>
+                            <field name="observacion"/>
+                </tree>
+            </field>
+        </record>
+        <!-- Action Of Form & Tree Views Of School Information -->
+        <record id="action_cuip_cuip_form" model="ir.actions.act_window">
+            <field name="name">CUIP</field>
+            <field name="res_model">cuip.cuip</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <record id="view_cuip_cuip_search" model="ir.ui.view">
+            <field name="name">cuip.cuip.search</field>
+            <field name="model">cuip.cuip</field>
+            <field name="arch" type="xml">
+                <search string="Cuip">
+                    <!--field name="Numero_empleado"/-->
+                    <newline/>
+                </search>
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

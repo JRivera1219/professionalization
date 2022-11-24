@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!--Sicap erp Menu -->
+        <menuitem id="menu_professionalization_root"
+                  name="Professionalization"
+                  sequence="10"
+                  web_icon="professionalization,static/description/guard.png"
+        />
+        <menuitem
+                id="menu_professionalization_settings"
+                name="Ajustes"
+                parent="menu_professionalization_root"
+                sequence="10"
+
+        />
+        <menuitem
+                id="menu_profesionalization_config_form1"
+                name="professionalization Configurations"
+                parent="menu_professionalization_settings"
+                sequence="11"
+        />
+
+        <menuitem
+                id="menu_professionalization_school_sub_form"
+                name="School"
+                parent="menu_profesionalization_config_form1"
+                action="action_professionalization_school_form"
+                sequence="12"
+        />
+
+        <menuitem
+                id="menu_hr_academic_formation_generation"
+                name="Generation"
+                parent="menu_profesionalization_config_form1"
+                action="action_hr_academic_formation_generation"
+                sequence="13"
+        />
+        <menuitem
+                id="menu_hr_academic_formation_group"
+                name="Group"
+                parent="menu_profesionalization_config_form1"
+                action="action_hr_academic_formation_group"
+                sequence="14"
+        />
+        <menuitem
+                name="Course Class"
+                parent="menu_profesionalization_config_form1"
+                id="menu_hr_academic_formation_class"
+                action="action_hr_academic_formation_class"
+                sequence="15"/>
+        <menuitem
+                name="Course category"
+                parent="menu_profesionalization_config_form1"
+                id="menu_hr_academic_formation_category"
+                action="action_hr_academic_formation_category"
+                sequence="16"/>
+        <menuitem
+                name="Course economic background"
+                parent="menu_profesionalization_config_form1"
+                id="menu_hr_academic_economic_background"
+                action="action_hr_academic_economic_background"
+                sequence="17"/>
+        <menuitem
+                name="academic formation training headquarters"
+                parent="menu_profesionalization_config_form1"
+                id="menu_hr_academic_formation_training_headquarters"
+                action="action_hr_academic_formation_training_funds"
+                sequence="18"/>
+        <menuitem
+                name="academic formation format"
+                parent="menu_profesionalization_config_form1"
+                id="menu_hr_academic_formation_format"
+                action="action_hr_academic_formation_format"
+                sequence="19"/>
+        <menuitem
+                name="Course Definition"
+                parent="menu_profesionalization_config_form1"
+                id="menu_hr_academic_formation"
+                action="action_hr_academic_formation"
+                sequence="20"/>
+
+        <menuitem action="action_checklist_line"
+                  id="menu_employee_orientation_config_line"
+                  name="Cource Checklist Line"
+                  parent="menu_profesionalization_config_form1"
+                  sequence="21"
+        />
+         
+
+         <menuitem
+                id="menu_employee_training_child"
+                name="Programa de Entrenamiento"
+                parent="menu_professionalization_root"
+                action="action_employee_training"
+                sequence="91"
+        />
+
+    
+ <!--se agrega new-->
+        <menuitem
+                id="menu_cuip_cuip"
+                name="CUIP"
+                parent="menu_professionalization_root"
+                action="action_cuip_cuip_form"
+                sequence="92"
+        />
+          <menuitem
+                id="menu_corp_corp"
+                name="CORP"
+                parent="menu_professionalization_root"
+                action="action_corp_corp_form"
+                sequence="93"
+        />
+<!--fin del agregado-->
+        
+
+
+    </data>
+</odoo>
